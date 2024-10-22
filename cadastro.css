@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.header {
+    background-color: #a700f5;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product-section {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-images {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.product-images img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.highlighted-image {
+    grid-column: span 2;
+}
+
+.product-details {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.product-details h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.product-color {
+    font-size: 16px;
+    color: #777;
+}
+
+.price {
+    font-size: 22px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.discounted {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.installments {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+label, select {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+select {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button.favorite {
+    background-color: #777;
+}
+
+.related-products {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.related-products h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.related-items {
+    display: flex;
+    gap: 20px;
+}
+
+.related-items .item {
+    flex: 1;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.related-items .item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
