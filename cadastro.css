@@ -143,22 +143,40 @@ footer {
     background-color: #333;
     color: white;
     padding: 20px;
-    text-align: center;
-    margin-top: 40px;
 }
 
-footer ul {
-    list-style: none;
+.footer-columns {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
 }
 
-footer ul li {
-    display: inline;
+.footer-columns .column {
+    width: 30%;
 }
 
-footer ul li a {
-    color: white;
-    text-decoration: none;
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-columns {
+        flex-direction: column;
+    }
+
+    .footer-columns .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        padding: 10px;
+    }
+
+    footer .footer-columns .column {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
