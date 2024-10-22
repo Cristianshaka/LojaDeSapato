@@ -1,87 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOLEculture</title>
-    <link rel="stylesheet" href="cadastro.css">
+    <title>Formulário - Loja de Tênis</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <h1>SOLEculture</h1>
-        </div>
-        <nav class="navbar">
-            <a href="index.html">Início</a>
-            <a href="catalogo.html">Produtos</a>
-            <a href="sobrenos.html">Sobre</a>
-        </nav>
+    <header>
+        <h1>SOLEculture</h1>
     </header>
 
-    <main>
-        <section class="product-section">
-            <div class="product-images">
-                <img src="shoe1.png" alt="Shoe 1">
-                <img src="shoe2.png" alt="Shoe 2">
-                <img src="shoe3.png" alt="Shoe 3">
-                <img src="shoe4.png" alt="Shoe 4" class="highlighted-image">
-            </div>
-            <div class="product-details">
-                <h2>Dunk Low Retro</h2>
-                <p class="product-color">Cor: Cavail</p>
-                <p class="price">R$ 799,99 <span class="discounted">R$ 899,99</span> 10% off</p>
-                <p class="installments">ou R$ 854,99 em até 3x sem juros 5% off</p>
+    <nav>
+        <a href="#">Início</a>
+        <a href="sobrenos.html">Sobre</a>
+        <a href="catalogo.html">Tênis</a>
+        <a href="contatos.html">Contatos</a>
+    </nav>
 
-                <label for="size">Selecione um tamanho</label>
-                <select id="size" name="size">
-                    <option value="37">37</option>
-                    <option value="38">38</option>
-                    <option value="39">39</option>
-                    <option value="40">40</option>
-                    <option value="41">41</option>
-                    <option value="42">42</option>
-                    <option value="43">43</option>
-                    <option value="44">44</option>
-                </select>
+    <div class="container">
+        <h1>Formulário de Compra</h1>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
 
-                <button class="add-to-cart">Adicionar ao carrinho</button>
-                <button class="favorite">Salvar como favorito</button>
-            </div>
-        </section>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
 
-        <section class="related-products">
-            <h3>Você também pode gostar</h3>
-            <div class="related-items">
-                <div class="item">
-                    <img src="imagens/tenis/dunk low rosa.jpeg" alt="Related 1">
-                    <p>Nike SB Dunk Low</p>
-                    <p>R$ 799,99</p>
-                </div>
-                <div class="item">
-                    <img src="imagens/tenis/dunk low.jpeg" alt="Related 2">
-                    <p>Nike SB Dunk Low</p>
-                    <p>R$ 799,99</p>
-                </div>
-                <div class="item">
-                    <img src="imagens/tenis/dunk low rosa.jpeg" alt="Related 3">
-                    <p>Nike SB Dunk Low</p>
-                    <p>R$ 799,99</p>
-                </div>
-                <div class="item">
-                    <img src="imagens/tenis/dunk low.jpeg" alt="Related 4">
-                    <p>Nike SB Dunk Low</p>
-                    <p>R$ 799,99</p>
-                </div>
-            </div>
-        </section>
-    </main>
+            <label for="shoe-size">Tamanho do Tênis:</label>
+            <select id="shoe-size" name="shoe-size" required>
+                <option value="">Selecione</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+            </select>
 
-    <footer>
-        <p>&copy; 2024 SOLEculture - Todos os direitos reservados</p>
-        <ul>
-            <li><a href="#">Política de Privacidade</a></li>
-            <li><a href="#">Termos de Serviço</a></li>
-        </ul>
-    </footer>
+            <label for="address">Endereço de Entrega:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 </body>
 </html>
